@@ -8,6 +8,8 @@ const app = express();
 //Conectar a la BD
 conectarDB();
 
+app.use(express.static('public'));
+
 app.use(cors());
 
 app.use(express.json());
